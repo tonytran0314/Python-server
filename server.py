@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html") # must have templates folder to contain html files
 
 @app.route("/details")
 def detls():
