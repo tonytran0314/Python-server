@@ -13,7 +13,7 @@ def detls():
     return render_template("details.html")
 
 @app.errorhandler(404)
-def error():
+def er():
     return render_template("error.html")
 
 if __name__ == "__main__":
