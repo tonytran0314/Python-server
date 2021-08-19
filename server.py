@@ -12,5 +12,9 @@ def index():
 def detls():
     return render_template("details.html")
 
+@app.errorhandler(404)
+def error():
+    return render_template("error.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80, debug=True)
